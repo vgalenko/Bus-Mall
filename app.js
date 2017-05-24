@@ -11,6 +11,7 @@ this.path = path;
 this.shown =0;
 this.totalClicked = 0;
 totalImages.push(this);
+//console.log('totalIMGs: ', totalImages);
 }
 
 var bag = new Image('bag', 'img/bag.jpg');
@@ -40,9 +41,18 @@ function randomGenerator() {
 }
 
 //I need to create a function for images to appear on the browser by using the randomGenerator function
+function renderImage() {
+  var img1 = document.getElementById('image_one');
+  var img2 = document.getElementById('image_two');
+  var img3 = document.getElementById('image_three');
+  console.log(img1, img2, img3);
+}
+renderImage();
+
+
 // I might need 3 functions for 3 seperate pictures.
 // I need to create a function that calculates the number of clicks I made
 // I need a function that will count what pictures I chose and another function to store pictures i didn't chose.
 // I need an eventListener so that verytime I click on a pictures it would generate new pics.
 // I need to get elementById
-// I will need to call functions in other functions 
+// I will need to call functions in other functions

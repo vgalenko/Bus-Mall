@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	/*margin: 0; */
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -42,7 +42,21 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+///////////////////////////////////////
+
+main img {
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+div {
+	margin: 0px 250px; 
+	display: inline;
 }
