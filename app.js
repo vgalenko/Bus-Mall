@@ -5,9 +5,9 @@ var totalImages = [];
 var totalClicked = [];
 var currentImages = [];
 
-var imgEl1 = document.getElementById('image_one');
-var imgEl2 = document.getElementById('image_two');
-var imgEl3 = document.getElementById('image_three');
+var imgEl1 = document.getElementById('image-one');
+var imgEl2 = document.getElementById('image-two');
+var imgEl3 = document.getElementById('image-three');
 
 function Image(name, path) {
   this.name = name;
@@ -46,9 +46,9 @@ function randomGenerator() {
 
 //I need to create a function for images to appear on the browser by using the randomGenerator function
 function renderImage() {
-  var imgEl1 = document.getElementById('image_one');
-  var imgEl2 = document.getElementById('image_two');
-  var imgEl3 = document.getElementById('image_three');
+  var imgEl1 = document.getElementById('image-one');
+  var imgEl2 = document.getElementById('image-two');
+  var imgEl3 = document.getElementById('image-three');
 
   console.log(imgEl1, imgEl2, imgEl3);
 
