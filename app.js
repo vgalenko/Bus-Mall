@@ -3,14 +3,14 @@
 var totalCounter = 0; // this will count up the total of clicked images
 var totalImages = [];
 var totalClicked = [];
-
+var currentImages = [];
 
 function Image(name, path) {
-this.name = name
-this.path = path;
-this.shown =0;
-this.totalClicked = 0;
-totalImages.push(this);
+  this.name = name;
+  this.path = path;
+  this.shown =0;
+  this.totalClicked = 0;
+  totalImages.push(this);
 //console.log('totalIMGs: ', totalImages);
 }
 
@@ -42,13 +42,28 @@ function randomGenerator() {
 
 //I need to create a function for images to appear on the browser by using the randomGenerator function
 function renderImage() {
-  var img1 = document.getElementById('image_one');
-  var img2 = document.getElementById('image_two');
-  var img3 = document.getElementById('image_three');
-  console.log(img1, img2, img3);
+  var imgEl1 = document.getElementById('image_one');
+  var imgEl2 = document.getElementById('image_two');
+  var imgEl3 = document.getElementById('image_three');
+
+  console.log(imgEl1, imgEl2, imgEl3);
+
+
 }
 renderImage();
 
+function imageSelector() {
+  // console.log(totalImages);
+  // randomGenerator();
+  // var timg = randomGenerator();
+  // var img1 = totalImages[Math.floor(Math.random() * totalImages.length)];
+  for (var i = 0; i < 3; i++) {
+    currentImages.push(totalImages[Math.floor(Math.random() * totalImages.length)]);
+    // console.log(totalImages[Math.floor(Math.random() * totalImages.length)]);
+  }
+  return currentImages;
+}
+imageSelector();
 
 // I might need 3 functions for 3 seperate pictures.
 // I need to create a function that calculates the number of clicks I made
